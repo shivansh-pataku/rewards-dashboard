@@ -1,0 +1,166 @@
+/* src/App.css */
+
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e2c8ff, #f7d9ff, #d6f0ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Home Container */
+.home {
+  margin: 20px auto;
+  padding: 0;
+  width: 100%;
+  max-width: 900px;
+  background-color: transparent;
+}
+
+/* Main App Card */
+.app {
+  padding: 25px;
+  background: #ffffffb8;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(6px);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #5b0089;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Section Cards */
+.user-list, 
+.leaderboard, 
+.claim-history {
+  width: 100%;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f6ebff, #fff);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.user-list:hover, 
+.leaderboard:hover, 
+.claim-history:hover {
+  transform: translateY(-5px);
+}
+
+/* Section Titles */
+.user-list h2, 
+.leaderboard h2, 
+.claim-history h2 {
+  color: #ff9800;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* Inputs, Selects, Buttons */
+select, input, button {
+  padding: 12px;
+  margin: 10px auto;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #d7abdf;
+  background: #f9e3fd;
+  color: #4a0072;
+  transition: all 0.2s ease;
+  width: 70%;
+}
+
+input:focus, 
+select:focus {
+  outline: none;
+  border-color: #9c27b0;
+  box-shadow: 0 0 8px rgba(156, 39, 176, 0.4);
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, #d16ba5, #c777b9, #8aaae5);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  width: 10rem;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #8aaae5, #c777b9, #d16ba5);
+  transform: scale(1.05);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 14px;
+  text-align: center;
+}
+
+th {
+  background-color: #7b1fa2;
+  color: #fff;
+  font-weight: 600;
+}
+
+td {
+  background-color: #faf5ff;
+  color: #333;
+}
+
+tr:nth-child(even) td {
+  background-color: #f0e6ff;
+}
+
+/* Messages */
+p {
+  color: #e74c3c;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home {
+    width: 100%;
+    margin: 0;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+  select, input {
+    width: 90%;
+  }
+}
