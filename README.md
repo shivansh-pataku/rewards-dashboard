@@ -1,12 +1,30 @@
-# React + Vite
+# Rewards Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A MERN (MongoDB, Express.js, React, Node.js) stack application designed to manage a rewards system, featuring a user interface to select users, claim points, and view leaderboards and claim history.
 
-Currently, two official plugins are available:
+## Features
+- User management: Add and select users.
+- Points system: Claim random points for selected users.
+- Leaderboard: Display top users by total points.
+- Claim history: Track all point claims with timestamps.
+- Responsive design with custom CSS styling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **Frontend**: React with Vite, Axios
+- **Backend**: Express.js, Node.js
+- **Database**: MongoDB (Atlas)
+- **Styling**: Custom CSS
+- **Deployment**: Vercel (Frontend), Render (Backend)
 
-## Expanding the ESLint configuration
+## Prerequisites
+- Node.js (v16+ recommended)
+- npm or yarn
+- MongoDB Atlas account (for database)
+- Git (for version control)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+### Clone the Repository
+```bash
+git clone https://github.com/yourusername/rewards-dashboard.git
+cd rewards-dashboard
